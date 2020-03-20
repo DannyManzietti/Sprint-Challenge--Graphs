@@ -1,7 +1,7 @@
 from room import Room
 from player import Player
 from world import World
-from util import Stack, Queue
+from util import move_map
 
 import random
 from ast import literal_eval
@@ -28,7 +28,7 @@ player = Player(world.starting_room)
 
 # Fill this out with directions to walk
 # traversal_path = ['n', 'n']
-traversal_path = []
+traversal_path = move_map(player)
 
 
 # TRAVERSAL TEST
